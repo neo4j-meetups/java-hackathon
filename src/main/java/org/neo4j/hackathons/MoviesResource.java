@@ -75,8 +75,8 @@ public class MoviesResource
             while(rs.next())
             {
                 int born = rs.getInt( "born" );
-                List<Movie> moviesActedIn = asMovies( rs, "movies_acted_in" );
-                List<Movie> moviesDirected = asMovies( rs, "movies_directed" );
+                List<Movie> moviesActedIn = extractMovies( rs, "movies_acted_in" );
+                List<Movie> moviesDirected = extractMovies( rs, "movies_directed" );
 
                 return new PersonView(name, born, moviesActedIn, moviesDirected);
             }
@@ -85,21 +85,10 @@ public class MoviesResource
         throw new RuntimeException( "No person found - should be 404" );
     }
 
-    private ArrayList<Movie> asMovies( ResultSet rs, String movies_acted_in ) throws SQLException
-    {
-        List<String> moviesActedIn = (List<String>) rs.getObject( movies_acted_in );
-        ArrayList<Movie> movies = new ArrayList<Movie>();
-        for ( String movieName : moviesActedIn )
-        {
-            movies.add( new Movie(movieName) );
-        }
-        return movies;
-    }
-
     @GET
     @Path( "/movie" )
     @Timed
-    public MovieListView movie() throws SQLException, ClassNotFoundException
+    public MovieListView movies() throws SQLException, ClassNotFoundException
     {
         List<Movie> movies = new ArrayList<>(  );
         try(Statement stmt = connection.createStatement())
@@ -113,5 +102,53 @@ public class MoviesResource
         }
 
         return new MovieListView(movies);
+    }
+
+    @GET
+    @Path( "/movie/{title}" )
+    @Timed
+    public MovieView movie(@PathParam("title") String title) throws SQLException, ClassNotFoundException
+    {
+        String query =
+                "    MATCH (m:Movie) WHERE m.title = {1}\n" +
+                        "    OPTIONAL MATCH (m)<-[:ACTED_IN]-(a:Person)\n" +
+                        "    OPTIONAL MATCH (m)<-[:DIRECTED]-(d:Person)\n" +
+                        "    RETURN m.title AS title, m.released AS released,\n" +
+                        "           collect(a.name) AS actors, d.name AS director";
+
+        try(PreparedStatement stmt = connection.prepareStatement( query ))
+        {
+            stmt.setString( 1, title );
+
+            ResultSet rs = stmt.executeQuery();
+
+            while(rs.next())
+            {
+                int released = rs.getInt( "released" );
+                String director = rs.getString( "director" );
+
+                List<Person> actors = new ArrayList<>(  );
+
+                for ( String actorName : (List<String>) rs.getObject( "actors" ) )
+                {
+                    actors.add(new Person( actorName ));
+                }
+
+                return new MovieView(title, released, actors, director);
+            }
+        }
+
+        throw new RuntimeException( "No movie found - should be 404" );
+    }
+
+    private ArrayList<Movie> extractMovies( ResultSet rs, String movies_acted_in ) throws SQLException
+    {
+        List<String> moviesActedIn = (List<String>) rs.getObject( movies_acted_in );
+        ArrayList<Movie> movies = new ArrayList<Movie>();
+        for ( String movieName : moviesActedIn )
+        {
+            movies.add( new Movie(movieName) );
+        }
+        return movies;
     }
 }
