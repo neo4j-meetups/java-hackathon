@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66321b8b-9f2d-4211-bc6e-4217afffd827" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_totallylazy_totallylazy_1049.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/MoviesApplication.java" afterPath="$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/MoviesApplication.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/MovieListView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/MovieView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/PersonListView.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/MoviesResource.java" afterPath="$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/MoviesResource.java" />
     </list>
     <ignored path="java-hackathon.iws" />
@@ -68,24 +69,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MoviesApplication.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/MoviesApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="55" selection-start="1209" selection-end="1209" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/assets/css/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="36" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="915">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="HomeView.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/HomeView.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -98,7 +81,7 @@
       <file leaf-file-name="PersonView.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/PersonView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="13" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="240">
+            <state line="4" column="36" selection-start="97" selection-end="101" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
               <folding />
             </state>
           </provider>
@@ -125,7 +108,34 @@
       <file leaf-file-name="MoviesResource.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/MoviesResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="33" selection-start="389" selection-end="399" vertical-scroll-proportion="0.09426551" vertical-offset="0" max-vertical-offset="1273">
+            <state line="65" column="35" selection-start="1482" selection-end="1482" vertical-scroll-proportion="0.6009427" vertical-offset="0" max-vertical-offset="1273">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MovieView.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/MovieView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="14" selection-start="118" selection-end="118" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PersonListView.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/PersonListView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="31" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MovieListView.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/MovieListView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="26" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
               <folding />
             </state>
           </provider>
@@ -143,7 +153,7 @@
       <file leaf-file-name="Neo4jDatabase.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/Neo4jDatabase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="20" selection-start="1083" selection-end="1083" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="975">
+            <state line="36" column="20" selection-start="1083" selection-end="1083" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="975">
               <folding />
             </state>
           </provider>
@@ -175,6 +185,9 @@
         <option value="$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/PersonView.java" />
         <option value="$PROJECT_DIR$/src/main/resources/org/neo4j/hackathons/person.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/MoviesApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/MovieListView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/PersonListView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/MovieView.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/MoviesResource.java" />
       </list>
     </option>
@@ -221,7 +234,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -358,6 +370,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -374,9 +387,14 @@
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="OverrideImplement.overriding.sorted" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.neo4j.hackathons" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
       <recent name="org.neo4j.hackathons" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -437,19 +455,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -475,6 +480,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -568,7 +586,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33200952" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33439237" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24980143" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -602,6 +620,69 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/MoviesApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="55" selection-start="1209" selection-end="1209" vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="870">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="36" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="915">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/HomeView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="20" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/PersonView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="13" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/org/neo4j/hackathons/person.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="549" selection-end="549" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/MoviesConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="420">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/MoviesResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="33" selection-start="389" selection-end="399" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/org/neo4j/hackathons/home.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="39" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="525">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/Neo4jDatabase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="20" selection-start="1083" selection-end="1083" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="975">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/MoviesApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="48" selection-start="990" selection-end="990" vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="690">
@@ -700,23 +781,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/PersonView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="13" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/HomeView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="20" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/Neo4jDatabase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="20" selection-start="1083" selection-end="1083" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
           <folding />
         </state>
       </provider>
@@ -728,9 +795,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/MovieListView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="26" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/PersonView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="36" selection-start="97" selection-end="101" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/Neo4jDatabase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="20" selection-start="1083" selection-end="1083" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/PersonListView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="31" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/MovieView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="14" selection-start="118" selection-end="118" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/MoviesResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="33" selection-start="389" selection-end="399" vertical-scroll-proportion="0.09426551" vertical-offset="0" max-vertical-offset="1273">
+        <state line="65" column="35" selection-start="1482" selection-end="1482" vertical-scroll-proportion="0.6009427" vertical-offset="0" max-vertical-offset="1273">
           <folding />
         </state>
       </provider>
