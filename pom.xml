@@ -36,11 +36,6 @@
       <artifactId>neo4j</artifactId>
       <version>2.1.0-M01</version>
     </dependency>
-    <dependency>
-      <groupId>com.googlecode.totallylazy</groupId>
-      <artifactId>totallylazy</artifactId>
-      <version>1049</version>
-    </dependency>
 
     <dependency>
       <groupId>io.dropwizard</groupId>
@@ -64,71 +59,72 @@
       <artifactId>dropwizard-assets</artifactId>
       <version>${dropwizard.version}</version>
     </dependency>
+
+
+    <dependency>
+      <groupId>org.neo4j</groupId>
+      <artifactId>neo4j-jdbc</artifactId>
+      <version>2.1.4</version>
+    </dependency>
   </dependencies>
 
   <repositories>
     <repository>
-      <id>repo.bodar.com</id>
-      <url>http://repo.bodar.com</url>
-    </repository>
-
-    <repository>
       <id>neo4j-maven</id>
-      <name>neo4j maven</name>
-      <url>http://m2.neo4j.org</url>
+      <url>http://m2.neo4j.org/content/groups/public</url>
     </repository>
   </repositories>
 
   <build>
-  <plugins>
-    <plugin>
-      <groupId>org.apache.maven.plugins</groupId>
-      <artifactId>maven-shade-plugin</artifactId>
-      <version>1.6</version>
-      <configuration>
-        <createDependencyReducedPom>true</createDependencyReducedPom>
-        <filters>
-          <filter>
-            <artifact>*:*</artifact>
-            <excludes>
-              <exclude>META-INF/*.SF</exclude>
-              <exclude>META-INF/*.DSA</exclude>
-              <exclude>META-INF/*.RSA</exclude>
-            </excludes>
-          </filter>
-        </filters>
-      </configuration>
-      <executions>
-        <execution>
-          <phase>package</phase>
-          <goals>
-            <goal>shade</goal>
-          </goals>
-          <configuration>
-            <transformers>
-              <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
-              <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                <mainClass>org.neo4j.hackathons.MoviesApplication</mainClass>
-              </transformer>
-            </transformers>
-          </configuration>
-        </execution>
-      </executions>
-    </plugin>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>1.6</version>
+        <configuration>
+          <createDependencyReducedPom>true</createDependencyReducedPom>
+          <filters>
+            <filter>
+              <artifact>*:*</artifact>
+              <excludes>
+                <exclude>META-INF/*.SF</exclude>
+                <exclude>META-INF/*.DSA</exclude>
+                <exclude>META-INF/*.RSA</exclude>
+              </excludes>
+            </filter>
+          </filters>
+        </configuration>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+            <configuration>
+              <transformers>
+                <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                  <mainClass>org.neo4j.hackathons.MoviesApplication</mainClass>
+                </transformer>
+              </transformers>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
 
-    <plugin>
-      <groupId>org.apache.maven.plugins</groupId>
-      <artifactId>maven-jar-plugin</artifactId>
-      <version>2.4</version>
-      <configuration>
-        <archive>
-          <manifest>
-            <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-          </manifest>
-        </archive>
-      </configuration>
-    </plugin>
-  </plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>2.4</version>
+        <configuration>
+          <archive>
+            <manifest>
+              <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+    </plugins>
   </build>
 
 </project>
