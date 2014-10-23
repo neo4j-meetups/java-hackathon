@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66321b8b-9f2d-4211-bc6e-4217afffd827" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/Movie.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/MovieListView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/org/neo4j/hackathons/person_list.ftl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/PersonView.java" afterPath="$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/PersonListView.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/org/neo4j/hackathons/person.ftl" afterPath="$PROJECT_DIR$/src/main/resources/org/neo4j/hackathons/movie_list.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/org/neo4j/hackathons/person.ftl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/MoviesResource.java" afterPath="$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/MoviesResource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/css/bootstrap-theme.css.map" afterPath="$PROJECT_DIR$/src/main/resources/assets/css/bootstrap-theme.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/css/bootstrap.css.map" afterPath="$PROJECT_DIR$/src/main/resources/assets/css/bootstrap.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/org/neo4j/hackathons/home.ftl" afterPath="$PROJECT_DIR$/src/main/resources/org/neo4j/hackathons/home.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="java-hackathon.iws" />
@@ -76,46 +68,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PersonListView.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/PersonListView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="1" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="person_list.ftl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/org/neo4j/hackathons/person_list.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="48" selection-start="433" selection-end="433" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="570">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="movie_list.ftl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/org/neo4j/hackathons/movie_list.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="26" selection-start="381" selection-end="381" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="570">
+            <state line="17" column="0" selection-start="355" selection-end="454" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="570">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MoviesConfiguration.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/MoviesConfiguration.java">
+      <file leaf-file-name="Statement.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/src.zip!/java/sql/Statement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="13" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="420">
+            <state line="502" column="36" selection-start="22354" selection-end="22354" vertical-scroll-proportion="-19.615385" vertical-offset="6675" max-vertical-offset="15690">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MoviesResource.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/MoviesResource.java">
+      <file leaf-file-name="person.ftl" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/org/neo4j/hackathons/person.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="50" selection-start="1767" selection-end="1767" vertical-scroll-proportion="0.95095694" vertical-offset="0" max-vertical-offset="990">
+            <state line="44" column="7" selection-start="935" selection-end="935" vertical-scroll-proportion="0.81280786" vertical-offset="0" max-vertical-offset="812">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PersonView.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/PersonView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="39" selection-start="681" selection-end="697" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+              <folding>
+                <element signature="e#569#570#0" expanded="true" />
+                <element signature="e#596#597#0" expanded="true" />
+                <element signature="e#628#629#0" expanded="true" />
+                <element signature="e#655#656#0" expanded="true" />
+                <element signature="e#704#705#0" expanded="true" />
+                <element signature="e#740#741#0" expanded="true" />
+                <element signature="e#790#791#0" expanded="true" />
+                <element signature="e#827#828#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LongParam.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/dropwizard/dropwizard-jersey/0.7.0/dropwizard-jersey-0.7.0.jar!/io/dropwizard/jersey/params/LongParam.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="13" selection-start="170" selection-end="170" vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="255">
               <folding />
             </state>
           </provider>
@@ -127,6 +128,17 @@
             <state line="15" column="21" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MoviesResource.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/MoviesResource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="80" column="30" selection-start="2394" selection-end="2394" vertical-scroll-proportion="0.0" vertical-offset="364" max-vertical-offset="1635">
+              <folding>
+                <element signature="e#2787#2794#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -145,15 +157,6 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/Movie.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="5" column="24" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.ftl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/org/neo4j/hackathons/home.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="38" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="540">
               <folding />
             </state>
           </provider>
@@ -192,13 +195,14 @@
         <option value="$PROJECT_DIR$/src/main/resources/org/neo4j/hackathons/web/home.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/org/neo4j/hackathons/home.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/css/main.css" />
-        <option value="$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/PersonView.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/org/neo4j/hackathons/person.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/org/neo4j/hackathons/movie_list.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/Movie.java" />
         <option value="$PROJECT_DIR$/src/main/resources/org/neo4j/hackathons/person_list.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/MovieListView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/PersonLView.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/MoviesResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/PersonView.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/org/neo4j/hackathons/person.ftl" />
       </list>
     </option>
   </component>
@@ -246,7 +250,7 @@
       <hideEmptyPackages />
       <abbreviatePackageNames />
       <autoscrollToSource />
-      <autoscrollFromSource />
+      <autoscrollFromSource ProjectPane="true" />
       <sortByType />
     </navigator>
     <panes>
@@ -258,6 +262,156 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="java-hackathon" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java-hackathon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: io.dropwizard:dropwizard-jersey:0.7.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dropwizard-jersey-0.7.0.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java-hackathon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: io.dropwizard:dropwizard-jersey:0.7.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dropwizard-jersey-0.7.0.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jersey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java-hackathon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: io.dropwizard:dropwizard-jersey:0.7.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dropwizard-jersey-0.7.0.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jersey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="params" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java-hackathon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; 1.7 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java-hackathon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; 1.7 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rt.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java-hackathon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; 1.7 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rt.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java-hackathon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; 1.7 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rt.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sql" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -396,6 +550,7 @@
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -602,7 +757,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24980143" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3290469" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3290469" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -675,7 +830,9 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/MoviesResource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="37" selection-start="864" selection-end="864" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
-          <folding />
+          <folding>
+            <element signature="e#2787#2794#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -770,13 +927,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/org/neo4j/hackathons/movie_list.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="26" selection-start="381" selection-end="381" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="570">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/MovieListView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="21" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
@@ -786,9 +936,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/dropwizard/dropwizard-jersey/0.7.0/dropwizard-jersey-0.7.0.jar!/io/dropwizard/jersey/params/LongParam.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="170" selection-end="170" vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/src.zip!/java/sql/Statement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="502" column="36" selection-start="22354" selection-end="22354" vertical-scroll-proportion="-19.615385" vertical-offset="6675" max-vertical-offset="15690">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/org/neo4j/hackathons/movie_list.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="355" selection-end="454" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="570">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/PersonView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="39" selection-start="681" selection-end="697" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+          <folding>
+            <element signature="e#569#570#0" expanded="true" />
+            <element signature="e#596#597#0" expanded="true" />
+            <element signature="e#628#629#0" expanded="true" />
+            <element signature="e#655#656#0" expanded="true" />
+            <element signature="e#704#705#0" expanded="true" />
+            <element signature="e#740#741#0" expanded="true" />
+            <element signature="e#790#791#0" expanded="true" />
+            <element signature="e#827#828#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/MoviesResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="50" selection-start="1767" selection-end="1767" vertical-scroll-proportion="0.95095694" vertical-offset="0" max-vertical-offset="990">
+        <state line="80" column="30" selection-start="2394" selection-end="2394" vertical-scroll-proportion="0.0" vertical-offset="364" max-vertical-offset="1635">
+          <folding>
+            <element signature="e#2787#2794#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/org/neo4j/hackathons/person.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="7" selection-start="935" selection-end="935" vertical-scroll-proportion="0.81280786" vertical-offset="0" max-vertical-offset="765">
           <folding />
         </state>
       </provider>
