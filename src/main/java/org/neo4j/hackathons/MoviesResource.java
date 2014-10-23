@@ -30,4 +30,16 @@ public class MoviesResource
 
         return new HomeView();
     }
+
+    @GET
+    @Path( "/person" )
+    @Timed
+    public PersonView person()
+    {
+        HashMap<String, Object> properties = new HashMap<>();
+
+        JsonNode result = neo4j.query( "MATCH (n) RETURN n LIMIT 5", properties );
+
+        return new PersonView();
+    }
 }

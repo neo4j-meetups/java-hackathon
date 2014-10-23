@@ -2,20 +2,21 @@
 <html>
 
 <head>
-  <title>Hackathon Movie Guide</title>
+  <title>Person List - Hackathon Movie Guide</title>
   <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 
 <body>
 
 <div class="header">
-  <nav><strong>Hackathon Movie Guide</strong></nav>
+  <nav><a href="/">Hackathon Movie Guide</a> / <strong>People</strong></nav>
 </div>
 
-<h1>Hackathon Movie Guide</h1>
+<h1>People</h1>
 <ul>
-  <li><a href="/person/">People</a></li>
-  <li><a href="/movie/">Movies</a></li>
+  % for name, in people:
+  <li><a href="/person/{{name}}">{{name}}</a></li>
+  % end
 </ul>
 
 <div class="footer">
