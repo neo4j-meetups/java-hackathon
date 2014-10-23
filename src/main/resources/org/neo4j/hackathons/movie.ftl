@@ -10,7 +10,7 @@
   <body>
 
   <div class="header">
-    <nav><a href="/">Hackathon Movie Guide</a> / <a href="/movies/">Movies</a> / <strong>${title}</strong></nav>
+    <nav><a href="/">Hackathon Movie Guide</a> / <a href="/movie/">Movies</a> / <strong>${title}</strong></nav>
   </div>
 
   <h1>${title}</h1>

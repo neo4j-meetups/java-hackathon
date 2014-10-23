@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66321b8b-9f2d-4211-bc6e-4217afffd827" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/Comment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/MovieView.java" afterPath="$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/MovieView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/MoviesResource.java" afterPath="$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/MoviesResource.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/org/neo4j/hackathons/movie.ftl" afterPath="$PROJECT_DIR$/src/main/resources/org/neo4j/hackathons/movie.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="java-hackathon.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -97,10 +93,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="movie.ftl" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="movie.ftl" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/org/neo4j/hackathons/movie.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="10" selection-start="930" selection-end="930" vertical-scroll-proportion="-21.25" vertical-offset="75" max-vertical-offset="1125">
+            <state line="12" column="64" selection-start="336" selection-end="336" vertical-scroll-proportion="0.22167487" vertical-offset="0" max-vertical-offset="1125">
               <folding />
             </state>
           </provider>
@@ -133,10 +129,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MoviesResource.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MoviesResource.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/MoviesResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="183" column="53" selection-start="6319" selection-end="6345" vertical-scroll-proportion="0.59902793" vertical-offset="1952" max-vertical-offset="2850">
+            <state line="183" column="53" selection-start="6319" selection-end="6345" vertical-scroll-proportion="0.0" vertical-offset="1742" max-vertical-offset="2850">
               <folding>
                 <element signature="e#6839#6846#0" expanded="true" />
               </folding>
@@ -224,8 +220,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/org/neo4j/hackathons/person.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/MovieView.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/Comment.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/org/neo4j/hackathons/movie.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/MoviesResource.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/org/neo4j/hackathons/movie.ftl" />
       </list>
     </option>
   </component>
@@ -780,7 +776,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24980143" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3290469" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3290469" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1035,19 +1031,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/org/neo4j/hackathons/movie.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="10" selection-start="930" selection-end="930" vertical-scroll-proportion="-21.25" vertical-offset="75" max-vertical-offset="1125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/neo4j/hackathons/MoviesResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="183" column="53" selection-start="6319" selection-end="6345" vertical-scroll-proportion="0.59902793" vertical-offset="1952" max-vertical-offset="2850">
+        <state line="183" column="53" selection-start="6319" selection-end="6345" vertical-scroll-proportion="0.0" vertical-offset="1742" max-vertical-offset="2850">
           <folding>
             <element signature="e#6839#6846#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/org/neo4j/hackathons/movie.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="64" selection-start="336" selection-end="336" vertical-scroll-proportion="0.22167487" vertical-offset="0" max-vertical-offset="1125">
+          <folding />
         </state>
       </provider>
     </entry>
