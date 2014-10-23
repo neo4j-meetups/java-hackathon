@@ -1,3 +1,4 @@
+<#-- @ftlvariable name="" type="org.neo4j.hackathons.PersonView" -->
 <!doctype html>
 <html>
 
@@ -14,9 +15,10 @@
 
 <h1>People</h1>
 <ul>
-  % for name, in people:
-  <li><a href="/person/{{name}}">{{name}}</a></li>
-  % end
+    <#list people as person>
+      <li><a href="${person.name}">${person.name}</a></li>
+    </#list>
+
 </ul>
 
 <div class="footer">

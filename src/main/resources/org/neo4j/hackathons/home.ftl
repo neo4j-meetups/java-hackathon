@@ -1,3 +1,4 @@
+<#-- @ftlvariable name="" type="org.neo4j.hackathons.HomeView" -->
 <!doctype html>
 <html>
 

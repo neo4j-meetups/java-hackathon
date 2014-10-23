@@ -1,6 +1,9 @@
 package org.neo4j.hackathons;
 
 import java.net.URI;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
 import io.dropwizard.Application;
 import io.dropwizard.assets.AssetsBundle;
@@ -31,10 +34,21 @@ public class MoviesApplication extends Application<MoviesConfiguration>
     @Override
     public void run( MoviesConfiguration configuration, Environment environment )
     {
-        Neo4jDatabase neo4jDatabase = new Neo4jDatabase( URI.create( "http://localhost:7474" ) );
+        // Make sure Neo4j Driver is registered
+        try
+        {
+            Class.forName("org.neo4j.jdbc.Driver");
+            Connection connection = DriverManager.getConnection( "jdbc:neo4j://localhost:7534/" );
 
-        final MoviesResource resource = new MoviesResource( neo4jDatabase );
-        environment.jersey().register( resource );
+            final MoviesResource resource = new MoviesResource( connection );
+            environment.jersey().register( resource );
+        }
+        catch ( ClassNotFoundException | SQLException e )
+        {
+            e.printStackTrace();
+        }
+
+
     }
 
 }

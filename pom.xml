@@ -36,11 +36,6 @@
       <artifactId>neo4j</artifactId>
       <version>2.1.0-M01</version>
     </dependency>
-    <dependency>
-      <groupId>com.googlecode.totallylazy</groupId>
-      <artifactId>totallylazy</artifactId>
-      <version>1049</version>
-    </dependency>
 
     <dependency>
       <groupId>io.dropwizard</groupId>
@@ -64,18 +59,20 @@
       <artifactId>dropwizard-assets</artifactId>
       <version>${dropwizard.version}</version>
     </dependency>
+
+
+    <dependency>
+      <groupId>org.neo4j</groupId>
+      <artifactId>neo4j-jdbc</artifactId>
+      <version>2.1.4</version>
+    </dependency>
   </dependencies>
 
   <repositories>
     <repository>
-      <id>repo.bodar.com</id>
-      <url>http://repo.bodar.com</url>
-    </repository>
-
-    <repository>
       <id>neo4j-maven</id>
       <name>neo4j maven</name>
-      <url>http://m2.neo4j.org</url>
+      <url>http://m2.neo4j.org/content/groups/public</url>
     </repository>
   </repositories>
 

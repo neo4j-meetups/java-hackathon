@@ -1,6 +1,14 @@
 package org.neo4j.hackathons;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -13,33 +21,36 @@ import com.fasterxml.jackson.databind.JsonNode;
 @Produces(MediaType.TEXT_HTML)
 public class MoviesResource
 {
-    private Neo4jDatabase neo4j;
+    private Connection connection;
 
-    public MoviesResource( Neo4jDatabase neo4j )
+    public MoviesResource( Connection connection )
     {
-        this.neo4j = neo4j;
+        this.connection = connection;
     }
 
     @GET
     @Timed
     public HomeView index()
     {
-        HashMap<String, Object> properties = new HashMap<>();
-
-        JsonNode result = neo4j.query( "MATCH (n) RETURN n LIMIT 5", properties );
-
         return new HomeView();
     }
 
     @GET
     @Path( "/person" )
     @Timed
-    public PersonView person()
+    public PersonView person() throws SQLException, ClassNotFoundException
     {
-        HashMap<String, Object> properties = new HashMap<>();
+        List<Person> people = new ArrayList<>(  );
+        try(Statement stmt = connection.createStatement())
+        {
+            ResultSet rs = stmt.executeQuery("MATCH (p:Person) return p");
+            while(rs.next())
+            {
+                Map<String, String> person = (Map<String, String>) rs.getObject( "p" );
+                people.add(new Person(person.get("name")));
+            }
+        }
 
-        JsonNode result = neo4j.query( "MATCH (n) RETURN n LIMIT 5", properties );
-
-        return new PersonView();
+        return new PersonView(people);
     }
 }
