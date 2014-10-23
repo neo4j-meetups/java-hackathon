@@ -5,12 +5,12 @@ import java.util.List;
 
 import io.dropwizard.views.View;
 
-public class PersonView extends View
+public class PersonListView extends View
 {
     private List<Person> people;
 
-    public PersonView(List<Person> people) {
-        super("person.ftl");
+    public PersonListView( List<Person> people ) {
+        super("person_list.ftl");
         this.people = people;
     }
 

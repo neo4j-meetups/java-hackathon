@@ -1,4 +1,4 @@
-<#-- @ftlvariable name="" type="org.neo4j.hackathons.PersonView" -->
+<#-- @ftlvariable title="" type="org.neo4j.hackathons.PersonListView" -->
 <!doctype html>
 <html>
 

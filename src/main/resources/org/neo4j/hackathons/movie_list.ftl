@@ -1,22 +1,24 @@
-<#-- @ftlvariable title="" type="org.neo4j.hackathons.HomeView" -->
+<#-- @ftlvariable title="" type="org.neo4j.hackathons.MovieListView" -->
 <!doctype html>
 <html>
 
 <head>
-  <title>Hackathon Movie Guide</title>
+  <title>Person List - Hackathon Movie Guide</title>
   <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 
 <body>
 
 <div class="header">
-  <nav><strong>Hackathon Movie Guide</strong></nav>
+  <nav><a href="/">Hackathon Movie Guide</a> / <strong>Movies</strong></nav>
 </div>
 
-<h1>Hackathon Movie Guide</h1>
+<h1>People</h1>
 <ul>
-  <li><a href="/person/">People</a></li>
-  <li><a href="/movie/">Movies</a></li>
+    <#list movies as movie>
+      <li><a href="${movie.title}">${movie.title}</a></li>
+    </#list>
+
 </ul>
 
 <div class="footer">

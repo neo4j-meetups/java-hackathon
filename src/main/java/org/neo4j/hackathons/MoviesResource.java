@@ -1,12 +1,10 @@
 package org.neo4j.hackathons;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import javax.ws.rs.GET;
@@ -15,7 +13,6 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 import com.codahale.metrics.annotation.Timed;
-import com.fasterxml.jackson.databind.JsonNode;
 
 @Path("/")
 @Produces(MediaType.TEXT_HTML)
@@ -38,7 +35,7 @@ public class MoviesResource
     @GET
     @Path( "/person" )
     @Timed
-    public PersonView person() throws SQLException, ClassNotFoundException
+    public PersonListView person() throws SQLException, ClassNotFoundException
     {
         List<Person> people = new ArrayList<>(  );
         try(Statement stmt = connection.createStatement())
@@ -51,6 +48,25 @@ public class MoviesResource
             }
         }
 
-        return new PersonView(people);
+        return new PersonListView(people);
+    }
+
+    @GET
+    @Path( "/movie" )
+    @Timed
+    public MovieListView movie() throws SQLException, ClassNotFoundException
+    {
+        List<Movie> movies = new ArrayList<>(  );
+        try(Statement stmt = connection.createStatement())
+        {
+            ResultSet rs = stmt.executeQuery("MATCH (m:Movie) return m");
+            while(rs.next())
+            {
+                Map<String, String> person = (Map<String, String>) rs.getObject( "m" );
+                movies.add( new Movie( person.get( "title" ) ) );
+            }
+        }
+
+        return new MovieListView(movies);
     }
 }

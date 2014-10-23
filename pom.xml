@@ -71,7 +71,7 @@
   <repositories>
     <repository>
       <id>neo4j-maven</id>
-      <name>neo4j maven</name>
+      <title>neo4j maven</title>
       <url>http://m2.neo4j.org/content/groups/public</url>
     </repository>
   </repositories>
