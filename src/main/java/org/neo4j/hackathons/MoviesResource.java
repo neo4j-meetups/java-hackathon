@@ -1,5 +1,6 @@
 package org.neo4j.hackathons;
 
+import java.sql.Connection;
 import java.util.HashMap;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -13,21 +14,17 @@ import com.fasterxml.jackson.databind.JsonNode;
 @Produces(MediaType.TEXT_HTML)
 public class MoviesResource
 {
-    private Neo4jDatabase neo4j;
+    private Connection connection;
 
-    public MoviesResource( Neo4jDatabase neo4j )
+    public MoviesResource( Connection connection )
     {
-        this.neo4j = neo4j;
+        this.connection = connection;
     }
 
     @GET
     @Timed
     public HomeView index()
     {
-        HashMap<String, Object> properties = new HashMap<>();
-
-        JsonNode result = neo4j.query( "MATCH (n) RETURN n LIMIT 5", properties );
-
         return new HomeView();
     }
 
@@ -36,10 +33,6 @@ public class MoviesResource
     @Timed
     public PersonView person()
     {
-        HashMap<String, Object> properties = new HashMap<>();
-
-        JsonNode result = neo4j.query( "MATCH (n) RETURN n LIMIT 5", properties );
-
         return new PersonView();
     }
 }
