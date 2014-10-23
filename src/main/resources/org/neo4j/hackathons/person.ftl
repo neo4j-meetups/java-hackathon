@@ -1,22 +1,38 @@
+<#-- @ftlvariable title="" type="org.neo4j.hackathons.PersonView" -->
 <!doctype html>
 <html>
 
 <head>
-  <title>Person List - Hackathon Movie Guide</title>
+  <title>${name} - Hackathon Movie Guide</title>
   <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 
 <body>
 
 <div class="header">
-  <nav><a href="/">Hackathon Movie Guide</a> / <strong>People</strong></nav>
+  <nav><a href="/">Hackathon Movie Guide</a> / <a href="/person/">People</a> / <strong>${name}</strong></nav>
 </div>
 
-<h1>People</h1>
+<h1>${name}</h1>
+
+<h2>Personal Details</h2>
+<dl>
+  <dt>Name:</dt>
+  <dd>${name}</dd>
+  <dt>Born:</dt>
+  <dd>${born?c}</dd>
+</dl>
+
+<h2>Movies</h2>
 <ul>
-  % for name, in people:
-  <li><a href="/person/{{name}}">{{name}}</a></li>
-  % end
+  <#list moviesActedIn as movie>
+    <li><a href="${movie.title}">${movie.title}</a> (Actor)</li>
+  </#list>
+
+  <#list moviesDirected as movie>
+    <li><a href="${movie.title}">${movie.title}</a> (Director)</li>
+  </#list>
+
 </ul>
 
 <div class="footer">
@@ -27,4 +43,3 @@
 </body>
 
 </html>
-
