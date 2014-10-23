@@ -11,14 +11,21 @@ public class MovieView extends View
     private int released;
     private List<Person> actors;
     private String director;
+    private List<Comment> comments;
 
-    public MovieView( String title, int released, List<Person> actors, String director )
+    public MovieView( String title, int released, List<Person> actors, String director, List<Comment> comments )
     {
         super("movie.ftl");
         this.title = title;
         this.released = released;
         this.actors = actors;
         this.director = director;
+        this.comments = comments;
+    }
+
+    public List<Comment> getComments()
+    {
+        return comments;
     }
 
     public String getTitle()

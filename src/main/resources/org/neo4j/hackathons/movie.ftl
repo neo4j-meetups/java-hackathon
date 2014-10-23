@@ -32,6 +32,33 @@
     </#list>
   </ul>
 
+  <h2>Comments</h2>
+
+    <#list comments as comment>
+      <p>On ${comment.date}, ${comment.name} said...
+      <blockquote>${comment.text}</blockquote>
+      </p>
+    </#list>
+
+
+
+  <form method="POST" action="comment">
+    <h3>Submit a new comment</h3>
+
+    <input type="hidden" name="title" value="${title}">
+
+    <label>Name:<br>
+      <input type="text" name="name" value="">
+    </label><br>
+
+    <label>Comments:<br>
+      <textarea name="text" cols="80" rows="6"></textarea>
+    </label><br>
+
+    <input type="submit" value="Submit">
+
+  </form>
+
   <div class="footer">
     <code>(graphs)-[:ARE]->(everywhere)</code>
     <p>With &hearts; from Sweden &amp; the <a href="http://neo4j.com/community/">Neo4j Community</a></p>
