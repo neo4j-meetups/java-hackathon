@@ -1,11 +1,19 @@
 package org.neo4j.hackathons;
 
+import java.util.ArrayList;
 import java.util.List;
 
-public class MovieListView
+import io.dropwizard.views.View;
+
+public class MovieListView extends View
 {
 
     public MovieListView(  )
     {
+        super("movie_list.ftl");
+    }
+
+    public List<Movie> getMovies () {
+        return new ArrayList<>(  );
     }
 }

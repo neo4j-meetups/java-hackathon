@@ -13,7 +13,7 @@
   <nav><a href="/">Hackathon Movie Guide</a> / <strong>Movies</strong></nav>
 </div>
 
-<h1>People</h1>
+<h1>Movies</h1>
 <ul>
     <#list movies as movie>
       <li><a href="${movie.title}">${movie.title}</a></li>
