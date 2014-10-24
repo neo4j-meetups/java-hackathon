@@ -35,7 +35,7 @@
   <h2>Comments</h2>
 
     <#list comments as comment>
-      <p>On ${comment.date}, ${comment.name} said...
+      <p>On ${comment.date?number_to_datetime}, ${comment.name} said...
       <blockquote>${comment.text}</blockquote>
       </p>
     </#list>

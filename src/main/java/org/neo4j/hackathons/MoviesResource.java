@@ -143,7 +143,9 @@ public class MoviesResource
 
                     List<Comment> comments = new ArrayList<>(  );
                     while(commentsResultSet.next()) {
-                        comments.add( new Comment(commentsResultSet.getString( "name" ), commentsResultSet.getString( "text" ), commentsResultSet.getInt( "date" )) );
+                        Comment comment = new Comment( commentsResultSet.getString( "name" ),
+                                commentsResultSet.getString( "text" ), commentsResultSet.getLong( "date" ) );
+                        comments.add( comment );
                     }
                     return new MovieView(title, released, actors, director, comments);
                 }

@@ -5,9 +5,9 @@ public class Comment
 
     private String name;
     private String text;
-    private int date;
+    private long date;
 
-    public Comment( String name, String text, int date )
+    public Comment( String name, String text, long date )
     {
         this.name = name;
         this.text = text;
@@ -24,7 +24,7 @@ public class Comment
         return text;
     }
 
-    public int getDate()
+    public long getDate()
     {
         return date;
     }
