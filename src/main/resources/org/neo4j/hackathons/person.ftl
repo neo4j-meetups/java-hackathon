@@ -26,11 +26,11 @@
 <h2>Movies</h2>
 <ul>
   <#list moviesActedIn as movie>
-    <li><a href="${movie.title}">${movie.title}</a> (Actor)</li>
+    <li><a href="/movie/${movie.title}">${movie.title}</a> (Actor)</li>
   </#list>
 
   <#list moviesDirected as movie>
-    <li><a href="${movie.title}">${movie.title}</a> (Director)</li>
+    <li><a href="/movie/${movie.title}">${movie.title}</a> (Director)</li>
   </#list>
 
 </ul>
