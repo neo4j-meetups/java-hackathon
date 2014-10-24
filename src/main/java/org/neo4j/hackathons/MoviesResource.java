@@ -39,14 +39,23 @@ public class MoviesResource
     @Timed
     public PersonListView people() throws SQLException, ClassNotFoundException
     {
+        /* TODO: Execute a Cypher query to retrieve all nodes with
+                 the `Person` label and pass them into the template
+                 ordered by `name` property */
         return new PersonListView();
     }
 
     @GET
+
     @Path( "/person/{name}" )
     @Timed
     public PersonView person(@PathParam("name") String name) throws SQLException, ClassNotFoundException
     {
+        /* TODO: Execute a Cypher query to retrieve all details for
+                 a specific named person, including `name` and year
+                 of birth (`born`) as well as a list of all movies
+                 in which they have been involved;
+        */
         return new PersonView();
     }
 
@@ -55,6 +64,9 @@ public class MoviesResource
     @Timed
     public MovieListView movies() throws SQLException, ClassNotFoundException
     {
+        /* TODO: Execute a Cypher query to retrieve all nodes with
+                 the `Movie` label and pass them into the template
+                 ordered by `title` property */
         return new MovieListView();
     }
 
@@ -63,7 +75,10 @@ public class MoviesResource
     @Timed
     public MovieView movie(@PathParam("title") String title) throws SQLException, ClassNotFoundException
     {
-                return new MovieView();
-
+        /* TODO: Execute a Cypher query to retrieve all details for
+                 a specific titled movie, including `title`, year
+                 of release (`released`), name of the director and
+                 name of all actors in the movie's cast */
+        return new MovieView();
     }
 }
