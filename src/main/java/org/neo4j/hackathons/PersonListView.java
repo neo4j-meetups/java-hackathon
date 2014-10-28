@@ -6,13 +6,15 @@ import java.util.List;
 
 public class PersonListView extends io.dropwizard.views.View
 {
+    private List<Person> people;
 
-    protected PersonListView(  )
+    public PersonListView( List<Person> people )
     {
         super( "person_list.ftl" );
+        this.people = people;
     }
 
     public List<Person> getPeople() {
-        return new ArrayList<>(  );
+        return people;
     }
 }

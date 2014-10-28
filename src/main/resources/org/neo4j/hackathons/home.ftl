@@ -13,7 +13,7 @@
   <nav><strong>Hackathon Movie Guide</strong></nav>
 </div>
 
-<h1>Hackathon Movie Guide</h1>
+<h1>Hackathon Movie Guide - 28th October 2014</h1>
 <ul>
   <li><a href="/person/">People</a></li>
   <li><a href="/movie/">Movies</a></li>
@@ -27,4 +27,3 @@
 </body>
 
 </html>
-

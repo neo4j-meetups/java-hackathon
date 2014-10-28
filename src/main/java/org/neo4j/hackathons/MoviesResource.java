@@ -39,10 +39,19 @@ public class MoviesResource
     @Timed
     public PersonListView people() throws SQLException, ClassNotFoundException
     {
-        /* TODO: Execute a Cypher query to retrieve all nodes with
-                 the `Person` label and pass them into the template
-                 ordered by `name` property */
-        return new PersonListView();
+        List<Person> people  = new ArrayList<>(  );
+        try(Statement stmt = connection.createStatement()) {
+            ResultSet rs = stmt.executeQuery(
+                    "MATCH (p:Person) " +
+                    "RETURN p " +
+                    "ORDER BY p.name" );
+            while(rs.next()) {
+                Map<String, String> person = (Map<String, String>) rs.getObject( "p" );
+                people.add( new Person(person.get( "name" )) );
+            }
+        }
+
+        return new PersonListView( people );
     }
 
     @GET
@@ -56,7 +65,64 @@ public class MoviesResource
                  of birth (`born`) as well as a list of all movies
                  in which they have been involved;
         */
-        return new PersonView();
+
+        String query = "MATCH (p:Person {name: {1} }) " +
+                       "OPTIONAL MATCH (p)-[:ACTED_IN]->(m) " +
+                       "WITH p, m ORDER BY m.title " +
+                       "WITH p, COLLECT(m.title) AS moviesActedIn " +
+                       "OPTIONAL MATCH (p)-[:DIRECTED]->(m) " +
+                       "WITH p, COLLECT(m.title) AS moviesDirected, moviesActedIn " +
+                       "RETURN p.name AS name, p.born AS born, moviesDirected, moviesActedIn " +
+                       "LIMIT 1";
+
+        try(PreparedStatement stmt = connection.prepareStatement( query )) {
+            stmt.setString( 1, name );
+            ResultSet rs = stmt.executeQuery();
+            if(rs.next()) {
+                List<Movie> moviesDirected = extractMovies( rs, "moviesDirected" );
+                List<Movie> moviesActedIn = extractMovies( rs, "moviesActedIn" );
+
+
+                String collaboratorsQuery =
+                        "MATCH (p:Person {name: {1} })-[:WORKED_WITH*2]-(potentialCollaborator) " +
+                        "WHERE (p)-[:WORKED_WITH]-(potentialCollaborator) AND potentialCollaborator <> p " +
+                        "RETURN potentialCollaborator.name AS name, COUNT(*) AS times " +
+                        "ORDER BY times DESC";
+
+                List<Collaborator> collaborators = new ArrayList<>(  );
+                try(PreparedStatement cstmt = connection.prepareStatement( collaboratorsQuery )) {
+                    cstmt.setString(1, name);
+                    ResultSet crs = cstmt.executeQuery();
+
+                    while(crs.next()) {
+                        Person person = new Person( crs.getString( "name" ) );
+                        Collaborator collaborator = new Collaborator( person, crs.getInt( "times" ) );
+                        collaborators.add( collaborator ) ;
+                    }
+                }
+
+                return new PersonView(
+                        rs.getString( "name" ),
+                        rs.getInt( "born" ),
+                        moviesActedIn,
+                        moviesDirected,
+                        collaborators);
+
+            } else {
+                throw new RuntimeException( "cannot find person" );
+            }
+        }
+
+    }
+
+    private List<Movie> extractMovies( ResultSet rs, String column ) throws SQLException
+    {
+        List<Movie> moviesDirected = new ArrayList<>(  );
+        for ( String title : (List<String>) rs.getObject( column ) )
+        {
+            moviesDirected.add( new Movie( title ) );
+        }
+        return moviesDirected;
     }
 
     @GET

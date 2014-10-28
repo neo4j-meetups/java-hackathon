@@ -38,7 +38,7 @@ public class MoviesApplication extends Application<MoviesConfiguration>
         try
         {
             Class.forName("org.neo4j.jdbc.Driver");
-            Connection connection = DriverManager.getConnection( "jdbc:neo4j://localhost:7534/" );
+            Connection connection = DriverManager.getConnection( "jdbc:neo4j://localhost:7474/" );
 
             final MoviesResource resource = new MoviesResource( connection );
             environment.jersey().register( resource );

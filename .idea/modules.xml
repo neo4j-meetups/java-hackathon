@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/java-hackathon.iml" filepath="$PROJECT_DIR$/java-hackathon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/neo4j-java-hackathon.iml" filepath="$PROJECT_DIR$/neo4j-java-hackathon.iml" />
     </modules>
   </component>
 </project>

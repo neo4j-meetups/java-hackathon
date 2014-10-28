@@ -22,11 +22,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="java-hackathon" />
+        <module name="neo4j-java-hackathon" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="java-hackathon" target="1.7" />
+      <module name="neo4j-java-hackathon" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

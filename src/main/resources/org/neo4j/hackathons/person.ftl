@@ -26,14 +26,23 @@
 <h2>Movies</h2>
 <ul>
   <#list moviesActedIn as movie>
-    <li><a href="${movie.title}">${movie.title}</a> (Actor)</li>
+    <li><a href="/movie/${movie.title}">${movie.title}</a> (Actor)</li>
   </#list>
 
   <#list moviesDirected as movie>
-    <li><a href="${movie.title}">${movie.title}</a> (Director)</li>
+    <li><a href="/movie/${movie.title}">${movie.title}</a> (Director)</li>
   </#list>
 
 </ul>
+
+<h2>Potential Collaborators</h2>
+<ul>
+  <#list collaborators as collaborator>
+    <li><a href="/person/${collaborator.name}">${collaborator.name}</a>  ${collaborator.times}</li>
+  </#list>
+
+</ul>
+
 
 <div class="footer">
   <code>(graphs)-[:ARE]->(everywhere)</code>
